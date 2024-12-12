@@ -1,9 +1,11 @@
 name: Release
 
 on:
-  push:
-    tags:
-      - "v*.*.*"
+  repository_dispatch:
+  workflow_dispatch:
+  #push:
+  #  tags:
+  #    - "v*.*.*"
 
 jobs:
   build:
