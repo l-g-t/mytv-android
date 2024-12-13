@@ -60,13 +60,13 @@ jobs:
           name: mytv-android-apk
           path: artifacts/*.apk
 
-      - name: Upload Release
-        uses: ncipollo/release-action@v1
-        with:
-          name: v${{ steps.version.outputs.version }}
-          token: ${{ secrets.GIT_TOKEN }}
-          omitBodyDuringUpdate: true
-          omitNameDuringUpdate: true
-          omitPrereleaseDuringUpdate: true
-          allowUpdates: true
-          artifacts: artifacts/*
+      #- name: Upload Release
+      #  uses: ncipollo/release-action@v1
+      #  with:
+      #    name: v${{ steps.version.outputs.version }}
+      #    token: ${{ secrets.GIT_TOKEN }}
+      #    omitBodyDuringUpdate: true
+      #    omitNameDuringUpdate: true
+      #    omitPrereleaseDuringUpdate: true
+      #    allowUpdates: true
+      #    artifacts: artifacts/*
