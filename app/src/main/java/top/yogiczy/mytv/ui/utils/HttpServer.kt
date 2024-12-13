@@ -28,7 +28,7 @@ import java.net.NetworkInterface
 import java.net.SocketException
 
 object HttpServer : Loggable() {
-    private const val SERVER_PORT = 10481
+    private const val SERVER_PORT = 9288
 
     private val uploadedApkFile = File(AppGlobal.cacheDir, "uploaded_apk.apk").apply {
         deleteOnExit()
